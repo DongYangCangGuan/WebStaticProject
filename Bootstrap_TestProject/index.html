@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bootstrap 应用网站</title>
+        <link rel="stylesheet" href="./lib/bootstrap.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <!-- 站点图标 -->
+        <link rel="shortcut icon" href="./imgs/lk_favicon.ico" type="image/x-icon" sizes="">
+        <!-- 调试样式所用 -->
+        <style>
+            div {
+                /* font-size: 90px; */
+            }
+        </style>
+    </head>
+    <body>
+      <!-- <button class="btn btn-success">点击</button>
+      <div class="glyphicon glyphicon-plus"></div> -->
+
+      <!-- 头部 -->
+        <header id="lk_header">
+            <!-- 上部分 -->
+            <div class="top-bar hidden-sm hidden-xs text-center text-muted">
+                <div class="container">
+                    <div class="row">
+                      <div class="top-bar-1 col-md-2">
+                          <a href="" class="text-muted">
+                              <i class="icon-phone"></i>
+                              <span>关注微信号</span>
+                              <span class="caret"></span>  
+                              <img src="./imgs/ewm_xzh.jpg" alt="dfd" width="130">
+                          </a>
+                      </div>
+                      <div class="top-bar-2 col-md-5">
+                          <i class="icon-tel"></i>
+                          <span>8888-555-6666(服务时间9:00-21：00）</span>
+                      </div>
+                      <div class="top-bar-3 col-md-2">
+                          <a href="" class="text-muted">校企合作</a>
+                          <a href="" class="text-muted">培训师</a>
+                      </div>
+                      <div class="top-bar-4 col-md-3">
+                          <a class="btn btn-default btn-sm btn-register" href="#" role="button">免费注册</a>
+                          <a class="text-muted" href="#" role="button" style="margin-left: 10px;"
+                              data-toggle="modal" data-target="#lk_login">立即登录</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 下部分 -->
+            <nav class="navbar navbar-default  navbar-static-top navbar-lk">
+                <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lk_nav" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="./imgs/lk_logo_sm.png" alt="dedg" width="180">
+                    </a>
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="lk_nav">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="javascript:;">关于我们</a></li>
+                        <li><a href="javascript:;">课程介绍</a></li>
+                        <li><a href="javascript:;">热门课程</a></li>
+                        <li><a href="javascript:;">名师授课</a></li>
+                        <li><a href="javascript:;">课堂互动</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                      <li><a href="#">个人中心</a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+        </header>
+      <!-- /头部 -->
+
+      <!-- 轮播图 -->
+        <section id="lk_carousel" class="carousel slide" data-ride="carousel">
+      <!-- 指示器 -->
+  <ol class="carousel-indicators">
+    <li data-target="#lk_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#lk_carousel" data-slide-to="1"></li>
+    <li data-target="#lk_carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- 中间滚动内容 -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" data-sm-img="./imgs/slide_01_640x340.jpg" data-lg-img="./imgs/slide_01_2000x410.jpg">
+      <!-- <img src="./imgs/slide_01_2000x410.jpg" alt="..."> -->
+    </div>
+    <div class="item" data-sm-img="./imgs/slide_02_640x340.jpg" data-lg-img="./imgs/slide_02_2000x410.jpg">
+      <!-- <img src="./imgs/slide_02_2000x410.jpg" alt="..."> -->
+    </div>
+    <div class="item" data-sm-img="./imgs/slide_03_640x340.jpg" data-lg-img="./imgs/slide_03_2000x410.jpg">
+        <!-- <img src="./imgs/slide_03_2000x410.jpg" alt="..."> -->
+      </div>
+  </div>
+
+  <!-- 左右 控制 -->
+  <a class="left carousel-control" href="#lk_carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#lk_carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+        </section>
+      <!-- /轮播图 -->
+
+      <!-- 关于我们 -->
+      <section id="lk_about" class="hidden-xs hidden-sm">
+        <!-- 标题 -->
+        <div class="title text-center">
+          <h1><strong>关于我们</strong></h1>
+          <img src="./imgs/star.png" alt="" class="img-responsive">
+        </div>
+        <!-- 主要内容 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="text-muted">Bootstrap 是一个用于快速开发 Web 应用程序和网站的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的。
+                Bootstrap 是由 Twitter 的 Mark Otto 和 Jacob Thornton 开发的。Bootstrap 是 2011 年八月在 GitHub 上发布的开源产品。
+              </p>
+              <p class="text-muted">移动设备优先：自 Bootstrap 3 起，框架包含了贯穿于整个库的移动设备优先的样式。
+                浏览器支持：所有的主流浏览器都支持 Bootstrap。
+                容易上手：只要您具备 HTML 和 CSS 的基础知识，您就可以开始学习 Bootstrap。
+              </p>
+              <p class="text-muted">响应式设计：Bootstrap 的响应式 CSS 能够自适应于台式机、平板电脑和手机。更多有关响应式设计的内容详见 Bootstrap 响应式设计。
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="./imgs/team.png" alt="核心团队" class="img-rounded img-responsive">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 关于我们 -->
+
+      <!-- 产品特色 -->
+      <section id="lk_product">
+        <div class="container">
+          <div class="row">
+            <!-- 头部选项卡 -->
+  <div style="overflow: auto;">
+    <ul class="nav nav-tabs" role="tablist" >
+      <li role="presentation" class="active"><a href="#" data-target="#product1" aria-controls="home" role="tab" data-toggle="tab">线下大学</a></li>
+      <li role="presentation"><a href="#" data-target="#product2" aria-controls="profile" role="tab" data-toggle="tab">会员专项</a></li>
+      <li role="presentation"><a href="#" data-target="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质食品</a></li>
+      <li class="pull-right hidden-sm hidden-xs"><a href="#" aria-controls="settings" role="tab" data-toggle="tab">更多</a></li>
+    </ul>
+  </div>
+
+  <!-- 展示详细内容 -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="product1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 pd-left">
+            <!-- 第一部分 -->
+            <div id="pd_one_1" class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="./imgs/ewm_xzh.jpg" alt="..." width="140">
+                </a>
+              </div>
+              <div class="media-body text-muted" style="padding-top: 100px">
+                <h5 class="media-heading">更多资讯欢迎</h5>
+                <h5 class="media-heading">关注撩课学院</h5>
+              </div>
+            </div>
+            <!-- 第二部分 -->
+            <ol id="pd_one_2" class="breadcrumb lead">
+              <li><a href="#">home</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Library</a></li>
+            </ol>
+            <!-- 第三部分-->
+            <h1 id="pd_one_3">
+              欢迎来到IT人的在线大学&nbsp;
+              <strong class="text-danger">廖科学院</strong>
+            </h1>
+            <!-- 第四部分 -->
+            <div id="pd_one_4">
+              <button class="btn btn-default btn-primary btn-lg" type="submit" style="margin-right: 20px;">课程资讯</button>
+              <button class="btn btn-default btn-lg" type="submit">了解更多</button>
+            </div>
+          </div>
+          <div class="col-md-4 hidden-sm hidden-xs">
+            <img src="./imgs/iphoneX.png" alt="" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="product2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 hidden-xs hidden-sm">
+            <img src="./imgs/iphoneX.png" alt="" class="img-responsive">
+          </div>
+          <div id="pd_two_1" class="col-md-8 pd-left">
+            <h1 class="text-warning">廖科许多元回调</h1>
+            <p class="lead"> 的价格公道发酵剂大家打飞机诶对的角色分都打算多
+              都额定积分空间的啦届时将打开</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="product3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 pd-left">
+            <h1>
+              <strong class="text-danger">
+                案例驱动。体系观赏。碟刹得到
+              </strong>
+            </h1>
+            <h3>
+              10-15分钟的视频
+              <span class="text-warning">知识点拆分讲解</span>
+            </h3>
+            <h4 class="text-muted" style="margin: 15px 0;">
+              对哦少就第几个我容积达到肌肤都的金佛嗯啊基督教觉得空间大咖飞机打
+              登记费段落
+            </h4>
+            <div class="badge" style="padding: 15px 10px;cursor: pointer;">
+              已更新3000+视频 | 100000+人订阅
+            </div>
+          </div>
+          <div class="col-md-6 hidden-xs hidden-sm">
+            <img src="./imgs/macBook.png" alt="" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+         </div>   <!-- // 外部最大的一行 row-->
+        </div>  <!-- container-->
+      </section>
+      <!-- 产品特色 -->
+
+      <!-- 热门课程 -->
+        <section id="lk_hot">
+           <!-- 标题 -->
+        <div class="title text-center">
+          <h1><strong>热门课程</strong></h1>
+          <img src="./imgs/star.png" alt="" class="img-responsive">
+        </div>
+        <!-- 内容 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 lesson">
+              <div class="media">
+                <div class="media-left">
+                 <img src="./imgs/lnj.png" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <span class="text-danger">【热】</span>
+                    Bootstrap 基本结构 
+                  </h4>
+                  <p class="text-muted" style="margin-top: 10px;">
+                    Bootstrap 自带以下特性：全局的 CSS 设置、定义基本的 HTML 元素样式、可扩展的 class，
+                  </p>
+                </div>
+                <div class="media-right text-danger">
+                  206节课
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 lesson">
+              <div class="media">
+                <div class="media-left">
+                 <img src="./imgs/lnj.png" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <span class="text-danger">【热】</span>
+                    Bootstrap 基本结构 
+                  </h4>
+                  <p class="text-muted" style="margin-top: 10px;">
+                    Bootstrap 自带以下特性：全局的 CSS 设置、定义基本的 HTML 元素样式、可扩展的 class，
+                  </p>
+                </div>
+                <div class="media-right text-danger">
+                  206节课
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 lesson">
+              <div class="media">
+                <div class="media-left">
+                 <img src="./imgs/lnj.png" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <span class="text-danger">【热】</span>
+                    Bootstrap 基本结构 
+                  </h4>
+                  <p class="text-muted" style="margin-top: 10px;">
+                    Bootstrap 自带以下特性：全局的 CSS 设置、定义基本的 HTML 元素样式、可扩展的 class，
+                  </p>
+                </div>
+                <div class="media-right text-danger">
+                  206节课
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 lesson">
+              <div class="media">
+                <div class="media-left">
+                 <img src="./imgs/lnj.png" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <span class="text-danger">【热】</span>
+                    Bootstrap 基本结构 
+                  </h4>
+                  <p class="text-muted" style="margin-top: 10px;">
+                    Bootstrap 自带以下特性：全局的 CSS 设置、定义基本的 HTML 元素样式、可扩展的 class，
+                  </p>
+                </div>
+                <div class="media-right text-danger">
+                  206节课
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 lesson">
+              <div class="media">
+                <div class="media-left">
+                 <img src="./imgs/lnj.png" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <span class="text-danger">【热】</span>
+                    Bootstrap 基本结构 
+                  </h4>
+                  <p class="text-muted" style="margin-top: 10px;">
+                    Bootstrap 自带以下特性：全局的 CSS 设置、定义基本的 HTML 元素样式、可扩展的 class，
+                  </p>
+                </div>
+                <div class="media-right text-danger">
+                  206节课
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 lesson">
+              <div class="media">
+                <div class="media-left">
+                 <img src="./imgs/lnj.png" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <span class="text-danger">【热】</span>
+                    Bootstrap 基本结构 
+                  </h4>
+                  <p class="text-muted" style="margin-top: 10px;">
+                    Bootstrap 自带以下特性：全局的 CSS 设置、定义基本的 HTML 元素样式、可扩展的 class，
+                  </p>
+                </div>
+                <div class="media-right text-danger">
+                  206节课
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      <!-- 热门课程 -->
+
+      <!-- 友情链接 -->
+       <section id="lk_link">
+            <!-- 标题 -->
+        <div class="title text-center">
+          <h1><strong>友情连接</strong></h1>
+          <img src="./imgs/star.png" alt="" class="img-responsive">
+        </div>
+        <ul class="logos">
+          <li><a href=""><img src="./imgs/ibm-logo.png" width="100" alt=""></a></li>
+          <li><a href=""><img src="./imgs/facebook-logo.png" width="50" alt=""></a></li>
+          <li><a href=""><img src="./imgs/google-logo.png" width="50" alt=""></a></li>
+          <li><a href=""><img src="./imgs/airbnb-logo.png" width="100" alt=""></a></li>
+          <li><a href=""><img src="./imgs/swift-logo.png" width="50" alt=""></a></li>
+          <li><a href=""><img src="./imgs/paypal-logo.png" width="100" alt=""></a></li>
+          <li><a href=""><img src="./imgs/walmart-logo.png" width="100" alt=""></a></li>
+        </ul>
+       </section>
+      <!-- 友情链接 -->
+
+      <!-- 尾部 -->
+      <footer id="lk_footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-1 one">
+              <div class="row" style="padding-top:20px;">
+                <ul class="col-md-6">
+                  <li><a href="">关于我们</a></li>
+                  <li><a href="">课程介绍</a></li>
+                  <li><a href="">热门课程</a></li>
+                </ul>
+                <ul class="col-md-6">
+                  <li><a href="">名师授课</a></li>
+                  <li><a href="">课堂互动</a></li>
+                  <li><a href="">联系我们</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 two">
+              <h5>公司地址：上海市松江区宋佳的欧典吗</h5>
+              <h5>联系电话：13454354343</h5>
+              <h5>地址邮箱：534534645343</h5>
+            </div>
+            <div class="col-md-3 three">
+              <h5>联系我们</h5>
+              <a href="">
+                <img src="./imgs/weixin-h.png" alt="" width="50px" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left">                                     
+                <img src="./imgs/xinlang-h.png" alt="" width="50" data-toggle="tooltip" data-placement="bottom" title="关注微博">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- 尾部 -->  
+
+      <!-- 登录 -->
+      <!-- Modal -->
+<div class="modal fade" id="lk_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">登录</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" placeholder="请输入手机号码">
+        <input type="password" placeholder="请输入密码">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- //登录 -->
+
+        <script src="./lib/jquery-3.4.1.js"></script>
+        <script src="./lib/bootstrap.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
